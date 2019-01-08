@@ -66,7 +66,7 @@ function setup() {
       } else if(x > width / 2) {
         x -= width;
       }
-      mag = pow(mag, 10);//sets the mag variable to power of 10
+      mag = pow(10, mag);//sets the mag variable to power of 10
       mag = sqrt(mag);//sets the square root of the magnitude
       var magmax = sqrt(pow(10, 10));// gets a new maximum magnitude
       var d = map(mag, 0, magmax, 0, 180);//sets the diameter in order to map the ellipses
