@@ -15,11 +15,13 @@ var earthquakes;
 var colourchange;
 //var colour;
 
+//this is preloading in the map image by using the api
 function preload() {
 mapimg = loadImage('https://api.mapbox.com/styles/v1/mapbox/dark-v9/static/' +
   clon + ',' + clat + ',' + zoom + '/' +
     ww + 'x' + hh +
-  '?access_token=pk.eyJ1IjoiY29kaW5ndHJhaW4iLCJhIjoiY2l6MGl4bXhsMDRpNzJxcDh0a2NhNDExbCJ9.awIfnl6ngyHoB3Xztkzarw');
+  '?access_token=pk.eyJ1IjoiY29kaW5ndHJhaW4iLCJhIjoiY2l6MGl4bXhsMDRpNzJxcDh0a2NhNDExbCJ9.awIfnl6ngyHoB3Xztkzarw');//my api key
+//load strings is loading in the data from the source
   earthquakes = loadStrings('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.csv');
 }
 
